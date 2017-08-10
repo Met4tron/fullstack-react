@@ -21,6 +21,6 @@ require('./routes/authRoutes')(app);
 mongoose.connect(keys.mongoURI, {useMongoClient: true});
 mongoose.Promise = global.Promise;
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => console.log(`Connected on PORT ${PORT}`));
